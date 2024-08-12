@@ -10,4 +10,4 @@
 2. 利用权重向量进行预测  
    $g(x_{i}) = w_{0} + \sum_{n=1}^{\infty}x_{in}*w_{n}$
 3. RMSE:评估模型质量  
-   $RMSE = sqrt{\frac{1}{m}{\sum_{i=1}^{m}(g(X_{i})-y_{i})^2}}$
+   $RMSE = \sqrt{\frac{1}{m}{\sum_{i=1}^{m}(g(X_{i})-y_{i})^2}}$
