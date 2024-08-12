@@ -1,7 +1,7 @@
 # python-机器学习
-关于python机器学习的练习  
+<font face="仿宋"> 关于python机器学习的练习 <\font>  
 机器学习的步骤（CRISP-DM）：
-问题理解 $\rightarrow$ 数据理解$\rightarrow$数据准备$\rightarrow$建模$\rightarrow$评估$\rightarrow$部署$\rightarrow$迭代
+问题理解 $\Longrightarrow$ 数据理解 $\Longrightarrow$ 数据准备 $\Longrightarrow$ 建模 $\Longrightarrow$ 评估 $\Longrightarrow$部署 $\Longrightarrow$ 迭代
 
 ## 线性回归机器学习 
 
