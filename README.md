@@ -9,7 +9,7 @@
    $w = (X^{T}X)^{-1}X^{T}y$
      
 2. 利用*权重向量*进行预测  
-   $g(x_{i}) = w_{0} + \sum_{n=1}^{\infty}(x_{in}*w_{n})$
+   $g(x_{i}) = w_{0} + \sum_{n=1}^{\infty}(x_{in}*w_{n}) = w_{0} + x_{i} \cdot w$ 
     
 3. *RMSE*:评估模型质量  
    $RMSE = \sqrt{\frac{1}{m}{\sum_{i=1}^{m}(g(X_{i})-y_{i})^2}}$
