@@ -1,2 +1,2 @@
-# python-爬虫
-关于python的练习
+# python-机器学习
+关于python机器学习的练习
