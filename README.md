@@ -62,7 +62,8 @@
       df_group['diff'] = df_group['mean'] - global_mean       
       df_group['risk'] = df_group['mean'] / global_mean     
       display(df_group)
-```         
+```
+3. wada     
    &emsp; &emsp; &emsp; **请注意display和print的区别**    
    &emsp; 但重要性指标只能帮助我们衡量分类变量和目标变量的依赖关系，很难用它来说明最重要的特征是什么     
 3. **互信息**：       
