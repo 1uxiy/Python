@@ -43,8 +43,8 @@
    这种情况下标准方程可以修正为:   
 &ensp; <table><tr><td bgcolor=cyan> $w = (X^{T}X+\alpha I)^{-1}X^{T}y$ &ensp; ($I$为单位矩阵) </td></tr></table>
          
-
-
+<\br>
+<\br>
                    
 ## 用于分类的机器学习  
  目标变量是一种分类变量
