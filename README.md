@@ -6,7 +6,7 @@
 ## 线性回归机器学习 
 
 1. 利用*标准方程*计算权重向量  
-   $w = (X^{T}X)^{-1}X^{T}y$
+   $w = (X^{T}X)^{-1}X^{T}y$            &ensp;&ensp;&ensp; **X并非由dataframe直接转化而来，需要在最前面加上一列1，用于区分偏置项和其他项**
 <table><tr><td bgcolor=cyan> $w = (X^{T}X+\alpha I)^{-1}X^{T}y$ &ensp; ($I$为单位矩阵) </td></tr></table>
      
 2. 利用*权重向量*进行预测  
