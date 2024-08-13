@@ -6,7 +6,8 @@
 ## 线性回归机器学习 
 
 1. 利用*标准方程*计算权重向量  
-   $w = (X^{T}X)^{-1}X^{T}y$
+   $w = (X^{T}X)^{-1}X^{T}y$  
+   &ensp; <table><tr><td bgcolor=cyan> $w = (X^{T}X+\alpha I)^{-1}X^{T}y$ &ensp; ($I$为单位矩阵) </td></tr></table>
      
 2. 利用*权重向量*进行预测  
    $g(x_{i}) = w_{0} + \sum_{n=1}^{\infty}(x_{in}*w_{n}) = w_{0} + x_{i} \cdot w$ 
@@ -39,4 +40,4 @@
    正则化是为了防止过度拟合，即模型在训练数据上表现良好，但在新的数据上表现很差，因为模型学习到了数据的噪声  
    · 一种正则化的方式是在数据矩阵的每个对角元素上添加一个小数值  
    这种情况下标准方程可以修正为:   
-<table><tr><td bgcolor=cyan> $w = (X^{T}X+\alpha I)^{-1}X^{T}y$ &ensp; ($I$为单位矩阵) </td></tr></table>
+&ensp; <table><tr><td bgcolor=cyan> $w = (X^{T}X+\alpha I)^{-1}X^{T}y$ &ensp; ($I$为单位矩阵) </td></tr></table>
