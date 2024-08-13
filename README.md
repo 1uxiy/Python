@@ -21,7 +21,7 @@
 1. **分类变量的处理**：  
    例如，在汽车价格预测的模型中，存在分类变量车们的个数：2、3、4，对于诸如此类的分类变量，我们无法直接用标准方程来计算,所以，我们选择的解决办法是，将单个分类变量转化为多个特征值，并用布尔值（0、1）来计算标准方程
    比如，将car_doors这个分类变量转化为car_doors_2,car_doors_3,car_doors_4三个特征值
-   ```
+   ```python
    def class_feature(df,name,n,vector):
     global features_1
     features_1 = vector.copy()
