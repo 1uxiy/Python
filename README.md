@@ -23,20 +23,20 @@
    比如，将car_doors这个分类变量转化为car_doors_2,car_doors_3,car_doors_4三个特征值
    ```python
    def class_feature(df,name,n,vector):
-    global features_1
-    features_1 = vector.copy()
+       global features_1
+       features_1 = vector.copy()
 
-    rank=df[name].value_counts()
-    if len(rank.index)<n:
-        for value in rank.index:
-            feature = '%s_%s'%(name,value)
-            features_1.append(feature)
-            df[feature] = (df[name]==value).astype(int)
-    else:
-        for value in rank.index[:n]:
-            feature = '%s_%s'%(name,value)
-            features_1.append(feature)
-            df[feature] = (df[name]==value).astype(int)
+       rank=df[name].value_counts()
+       if len(rank.index)<n:
+           for value in rank.index:
+               feature = '%s_%s'%(name,value)
+               features_1.append(feature)
+               df[feature] = (df[name]==value).astype(int)
+       else:
+           for value in rank.index[:n]:
+               feature = '%s_%s'%(name,value)
+               features_1.append(feature)
+               df[feature] = (df[name]==value).astype(int)
    ```  
 3. **数据的正则化**：   
    正则化是为了防止过度拟合，即模型在训练数据上表现良好，但在新的数据上表现很差，因为模型学习到了数据的噪声  
