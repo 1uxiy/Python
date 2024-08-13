@@ -71,6 +71,6 @@
    &emsp; `mutual_info_score(series1,series2)`    
    &emsp; 互信息虽然能量化依赖程度，但他只能反映两个分类变量之间的依赖程度，对于数值变量就不行
 4. **相关系数**:
-   &emsp; 正相关、负相关、零相关
+   &emsp; 正相关、负相关、零相关   
    &emsp; 相关系数的计算非常简单，使用`pd.corrwith(series1,series2)`即可
 
