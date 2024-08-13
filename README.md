@@ -58,10 +58,10 @@
    &emsp; 利用循环查看所有分类变量的风险率和差值，可以提前确定特征的重要性————这帮助我们回答了“究竟是什么在影响目标变量？”   
 ```
 for col in categorical:   
-df_group = df_train_full.groupby(col).churn.agg(['mean'])     
+  df_group = df_train_full.groupby(col).churn.agg(['mean'])     
 #agg 是 aggregation（聚合）的缩写，表示对数据进行聚合运算。这里传入了 ['mean']，表示对每个性别分组中的 churn 列计算平均值（即：计算该性别组的用户流失率的平均值）。   
-df_group['diff'] = df_group['mean'] - global_mean       
-df_group['risk'] = df_group['mean'] / global_mean     
-display(df_group)         
+  df_group['diff'] = df_group['mean'] - global_mean       
+  df_group['risk'] = df_group['mean'] / global_mean     
+  display(df_group)         
 ```         
   &emsp; &emsp; &emsp; **请注意display和print的区别**
