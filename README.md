@@ -68,5 +68,9 @@
    &emsp; 互信息是衡量分类变量和目标变量依赖程度的重要指标  
    &emsp; 互信息值越高，依赖程度越高，分类变量越重要   
    &emsp; `Scikit-learn`已经在`metrics`包的`mutual_info_score`函数中实现了互信息的计算    
-   &emsp; `mutual_info_score(series1,series2)`
+   &emsp; `mutual_info_score(series1,series2)`    
+   &emsp; 互信息虽然能量化依赖程度，但他只能反映两个分类变量之间的依赖程度，对于数值变量就不行
+4. **相关系数**:
+   &emsp; 正相关、负相关、零相关
+   &emsp; 相关系数的计算非常简单，使用`pd.corrwith(series1,series2)`即可
 
