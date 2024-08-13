@@ -57,13 +57,13 @@
 2. 查看所有分类变量的风险率和差值：         
    &emsp; 利用循环查看所有分类变量的风险率和差值，可以提前确定特征的重要性————这帮助我们回答了“究竟是什么在影响目标变量？”           
   ```
-for col in categorical:   
-    df_group = df_train_full.groupby(col).churn.agg(['mean'])     
-    df_group['diff'] = df_group['mean'] - global_mean       
-    df_group['risk'] = df_group['mean'] / global_mean     
-    display(df_group)         
+  for col in categorical:   
+      df_group = df_train_full.groupby(col).churn.agg(['mean'])     
+      df_group['diff'] = df_group['mean'] - global_mean       
+      df_group['risk'] = df_group['mean'] / global_mean     
+      display(df_group)         
   ```          
-    &emsp; &emsp; &emsp; **请注意display和print的区别**    
+   &emsp; &emsp; &emsp; **请注意display和print的区别**    
    &emsp; 但重要性指标只能帮助我们衡量分类变量和目标变量的依赖关系，很难用它来说明最重要的特征是什么     
 3. 互信息：       
    &emsp; 互信息是衡量分类变量和目标变量依赖程度的重要指标  
