@@ -68,5 +68,5 @@ for col in categorical:
 3. 互信息： 
 &emsp; 互信息是衡量分类变量和目标变量依赖程度的重要指标  
 &emsp; 互信息值越高，依赖程度越高，分类变量越重要   
-&emsp; Scikit-learn已经在metrics包的mutual_info_score函数中实现了互信息的计算    
+&emsp; `Scikit-learn`已经在`metrics`包的`mutual_info_score`函数中实现了互信息的计算    
 &emsp; `mutual_info_score(series1,series2)`
