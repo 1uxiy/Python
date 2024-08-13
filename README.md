@@ -6,8 +6,8 @@
 ## 线性回归机器学习 
 
 1. 利用*标准方程*计算权重向量  
-   $w = (X^{T}X)^{-1}X^{T}y$  
-   &ensp; <table><tr><td bgcolor=cyan> $w = (X^{T}X+\alpha I)^{-1}X^{T}y$ &ensp; ($I$为单位矩阵) </td></tr></table>
+   $w = (X^{T}X)^{-1}X^{T}y$
+<table><tr><td bgcolor=cyan> $w = (X^{T}X+\alpha I)^{-1}X^{T}y$ &ensp; ($I$为单位矩阵) </td></tr></table>
      
 2. 利用*权重向量*进行预测  
    $g(x_{i}) = w_{0} + \sum_{n=1}^{\infty}(x_{in}*w_{n}) = w_{0} + x_{i} \cdot w$ 
