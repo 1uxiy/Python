@@ -40,4 +40,4 @@
    · 一种正则化的方式是在数据矩阵的每个对角元素上添加一个小数值  
    这种情况下标准方程可以修正为:  
       $w = (X^{T}X+\alpha I)^{-1}X^{T}y$ &ensp; ($I$为单位矩阵)
-
+<table><tr><td bgcolor=cyan> $w = (X^{T}X+\alpha I)^{-1}X^{T}y$ &ensp; ($I$为单位矩阵) </td></tr></table>
