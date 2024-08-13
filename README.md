@@ -69,3 +69,7 @@
    &emsp; 互信息值越高，依赖程度越高，分类变量越重要   
    &emsp; `Scikit-learn`已经在`metrics`包的`mutual_info_score`函数中实现了互信息的计算    
    &emsp; `mutual_info_score(series1,series2)`
+```
+if x>5:
+  x=20
+```
