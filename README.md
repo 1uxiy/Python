@@ -8,18 +8,18 @@
 ## 线性回归机器学习 
 
 1. 利用*标准方程*计算权重向量  
-   $w = (X^{T}X)^{-1}X^{T}y$            &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; **X并非由dataframe直接转化而来，需要在最前面加上一列1，用于区分偏置项和其他项**
-<table><tr><td bgcolor=cyan> $w = (X^{T}X+\alpha I)^{-1}X^{T}y$ &ensp; ($I$为单位矩阵) </td></tr></table>
+   &emsp; $w = (X^{T}X)^{-1}X^{T}y$            &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; **X并非由dataframe直接转化而来，需要在最前面加上一列1，用于区分偏置项和其他项**
+&emsp; <table><tr><td bgcolor=cyan> $w = (X^{T}X+\alpha I)^{-1}X^{T}y$ &ensp; ($I$为单位矩阵) </td></tr></table>
      
 2. 利用*权重向量*进行预测  
-   $g(x_{i}) = w_{0} + \sum_{n=1}^{\infty}(x_{in}*w_{n}) = w_{0} + x_{i} \cdot w$ 
+   &emsp; $g(x_{i}) = w_{0} + \sum_{n=1}^{\infty}(x_{in}*w_{n}) = w_{0} + x_{i} \cdot w$ 
     
 3. *RMSE*:评估模型质量  
-   $RMSE = \sqrt{\frac{1}{m}{\sum_{i=1}^{m}(g(X_{i})-y_{i})^2}}$
+   &emsp; $RMSE = \sqrt{\frac{1}{m}{\sum_{i=1}^{m}(g(X_{i})-y_{i})^2}}$
   
 &ensp; 以上三点为线性回归机器学习建模的数学原理支撑,还有一些较为重要的细节：
 1. **分类变量的处理**：  
-   例如，在汽车价格预测的模型中，存在分类变量车们的个数：2、3、4，对于诸如此类的分类变量，我们无法直接用标准方程来计算,所以，我们选择的解决办法是，将单个分类变量转化为多个特征值，并用布尔值（0、1）来计算标准方程
+   &emsp; 例如，在汽车价格预测的模型中，存在分类变量车们的个数：2、3、4，对于诸如此类的分类变量，我们无法直接用标准方程来计算,所以，我们选择的解决办法是，将单个分类变量转化为多个特征值，并用布尔值（0、1）来计算标准方程
    比如，将car_doors这个分类变量转化为car_doors_2,car_doors_3,car_doors_4三个特征值
    ```python
    def class_feature(df,name,n,vector):
@@ -39,10 +39,10 @@
                df[feature] = (df[name]==value).astype(int)
    ```  
 3. **数据的正则化**：   
-   正则化是为了防止过度拟合，即模型在训练数据上表现良好，但在新的数据上表现很差，因为模型学习到了数据的噪声  
-   · 一种正则化的方式是在数据矩阵的每个对角元素上添加一个小数值  
-   这种情况下标准方程可以修正为:   
-&ensp; <table><tr><td bgcolor=cyan> $w = (X^{T}X+\alpha I)^{-1}X^{T}y$ &ensp; ($I$为单位矩阵) </td></tr></table>
+   &emsp; 正则化是为了防止过度拟合，即模型在训练数据上表现良好，但在新的数据上表现很差，因为模型学习到了数据的噪声  
+   &emsp; · 一种正则化的方式是在数据矩阵的每个对角元素上添加一个小数值  
+   &emsp; 这种情况下标准方程可以修正为:   
+&ensp; &emsp;  <table><tr><td bgcolor=cyan> $w = (X^{T}X+\alpha I)^{-1}X^{T}y$ &ensp; ($I$为单位矩阵) </td></tr></table>
          
 &ensp;     
 &ensp;        
