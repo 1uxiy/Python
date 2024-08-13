@@ -3,9 +3,7 @@
 机器学习的步骤（CRISP-DM）：
 问题理解 $\longrightarrow$ 数据理解 $\longrightarrow$ 数据准备 $\longrightarrow$ 建模 $\longrightarrow$ 评估 $\longrightarrow$部署 $\longrightarrow$ 迭代
 
-
-
-                
+           
 ## 线性回归机器学习 
 
 1. 利用*标准方程*计算权重向量  
@@ -44,8 +42,10 @@
    · 一种正则化的方式是在数据矩阵的每个对角元素上添加一个小数值  
    这种情况下标准方程可以修正为:   
 &ensp; <table><tr><td bgcolor=cyan> $w = (X^{T}X+\alpha I)^{-1}X^{T}y$ &ensp; ($I$为单位矩阵) </td></tr></table>
-   
-   
+         
+
+
+                   
 ## 用于分类的机器学习  
  目标变量是一种分类变量
    
