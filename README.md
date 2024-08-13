@@ -3,6 +3,9 @@
 机器学习的步骤（CRISP-DM）：
 问题理解 $\longrightarrow$ 数据理解 $\longrightarrow$ 数据准备 $\longrightarrow$ 建模 $\longrightarrow$ 评估 $\longrightarrow$部署 $\longrightarrow$ 迭代
 
+
+
+                
 ## 线性回归机器学习 
 
 1. 利用*标准方程*计算权重向量  
