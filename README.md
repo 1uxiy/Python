@@ -59,4 +59,4 @@ df_group['diff'] = df_group['mean'] - global_mean
 df_group['risk'] = df_group['mean'] / global_mean     
 display(df_group)         
 ```         
- &emsp; **请注意display和print的区别**
+  &emsp; **请注意display和print的区别**
