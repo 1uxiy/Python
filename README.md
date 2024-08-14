@@ -86,6 +86,6 @@
    &emsp; 完整公式如下：    
    &emsp; &emsp;  $g(x_i) = sigmoid(w_0 +x^{T}_{i}w)$    
    &emsp; &emsp;  $sigmoid(x)={1 \over 1+exp(-x)}$       
-
+   ![图片]( "C:\Users\DELL\Desktop\微信图片_20240814170553.jpg" "sigmoid函数")
    
    
