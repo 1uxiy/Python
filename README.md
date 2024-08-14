@@ -85,7 +85,7 @@
    &emsp; 逻辑回归输出的是**概率**，即 $y_i=1$的概率,因此我们要将他的输出控制在0~1之内        
    &emsp; 完整公式如下：    
    &emsp; &emsp;  $g(x_i) = sigmoid(w_0 +x^{T}_{i}w)$    
-   &emsp; &emsp;  $sigmoid(x)={1 \over 1+exp(-x)}    
+   &emsp; &emsp;  $sigmoid(x)={1 \over 1+exp(-x)}$       
 
    
    
