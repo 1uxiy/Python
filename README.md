@@ -1,2 +1,2 @@
-# python-爬虫
+# python
 关于python的练习
