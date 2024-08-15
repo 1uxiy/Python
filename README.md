@@ -8,13 +8,14 @@
 ## 线性回归机器学习 
 
 1. 利用*标准方程*计算权重向量  
-   &emsp; $w = (X^{T}X)^{-1}X^{T}y$            &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; **X并非由dataframe直接转化而来，需要在最前面加上一列1，用于区分偏置项和其他项**
+   &emsp; $w = (X^{T}X)^{-1}X^{T}y$       
+   &ensp; &ensp; &ensp; **X并非由dataframe直接转化而来，需要在最前面加上一列1，用于区分偏置项和其他项**     
 &emsp; <table><tr><td bgcolor=cyan> $w = (X^{T}X+\alpha I)^{-1}X^{T}y$ &ensp; ($I$为单位矩阵) </td></tr></table>
      
-2. 利用*权重向量*进行预测  
+3. 利用*权重向量*进行预测  
    &emsp; $g(x_{i}) = w_{0} + \sum_{n=1}^{\infty}(x_{in}*w_{n}) = w_{0} + x_{i} \cdot w$ 
     
-3. *RMSE*:评估模型质量  
+4. *RMSE*:评估模型质量  
    &emsp; $RMSE = \sqrt{\frac{1}{m}{\sum_{i=1}^{m}(g(X_{i})-y_{i})^2}}$
   
 &ensp; 以上三点为线性回归机器学习建模的数学原理支撑,还有一些较为重要的细节：
