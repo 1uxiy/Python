@@ -80,11 +80,33 @@
    &emsp; 对于分类变量contact有几个可能的值（月签、年签、两年签），则年签合同可以按照独热编码表示为（0,1,0)         
    &emsp; 以此来将分类变量转化为可计算的数值      
  &emsp;   
-6. **逻辑回归模型**：   
-   &emsp; 逻辑回归夜市线性模型，但与线性模型不同的是，它是一个分类模型，因为目标变量是二元的   
+6. **逻辑回归**：   
+   &emsp; 逻辑回归也是线性模型，但与线性模型不同的是，它是一个分类模型，因为目标变量是二元的   
    &emsp; 逻辑回归输出的是**概率**，即 $y_i=1$的概率,因此我们要将他的输出控制在0~1之内        
    &emsp; 完整公式如下：    
    &emsp; &emsp;  $g(x_i) = sigmoid(w_0 +x^{T}_{i}w)$    
    &emsp; &emsp;  $sigmoid(x)={1 \over 1+exp(-x)}$       
-   <img src="https://github.com/1uxiy/Python/blob/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/IMAGE/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20240814170553.jpg" width="50%" height="50%">
-   
+   <img src="https://github.com/1uxiy/Python/blob/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/IMAGE/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20240814170553.jpg" width="50%" height="50%">     
+$emsp;        
+7. **模型**：    
+   &emsp; 在这里，我们使用 `sklearn`库中`linear_model`模块中的`LogisticRegresssion`函数   
+   &emsp; 并用`model.fit`来训练它    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
