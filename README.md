@@ -87,7 +87,7 @@
    &emsp; &emsp;  $g(x_i) = sigmoid(w_0 +x^{T}_{i}w)$    
    &emsp; &emsp;  $sigmoid(x)={1 \over 1+exp(-x)}$       
    <img src="https://github.com/1uxiy/Python/blob/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/IMAGE/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20240814170553.jpg" width="50%" height="50%">     
-$emsp;        
+&emsp;        
 7. **模型**：    
    &emsp; 在这里，我们使用 `sklearn`库中`linear_model`模块中的`LogisticRegresssion`函数   
    &emsp; 并用`model.fit`来训练它    
