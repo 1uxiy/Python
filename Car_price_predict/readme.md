@@ -9,7 +9,7 @@
    * 使用`sklearn.model_selection`包中的`train_test_split`来分割数据集     
    * 使用`sklearn.feature_extraction`包中的`DivVectorizer`来处理分类变量和转化为数组      
    * 使用`sklearn.linear_model`包中的`Ridge`来进行*岭回归*拟合     
-   &emsp; &emsp; &emsp; &emsp;&emsp; &emsp; &emsp; &emsp;  &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; *岭回归*————含正则化的线性回归
+   &emsp; &emsp; &emsp; &emsp;&emsp; &emsp; &emsp; &emsp;  &emsp; &emsp;&emsp; &emsp;&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; *岭回归*————含正则化的线性回归
 
 
 
