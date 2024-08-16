@@ -43,7 +43,9 @@
    &emsp; 正则化是为了防止过度拟合，即模型在训练数据上表现良好，但在新的数据上表现很差，因为模型学习到了数据的噪声  
    &emsp; · 一种正则化的方式是在数据矩阵的每个对角元素上添加一个小数值  
    &emsp; 这种情况下标准方程可以修正为:   
-&ensp; &emsp;  <table><tr><td bgcolor=cyan> $w = (X^{T}X+\alpha I)^{-1}X^{T}y$ &ensp; ($I$为单位矩阵) </td></tr></table>
+&ensp; &emsp;  <table><tr><td bgcolor=cyan> $w = (X^{T}X+\alpha I)^{-1}X^{T}y$ &ensp; ($I$为单位矩阵) </td></tr></table>              
+   &emsp;             
+***线性回归可以直接使用`sklearn.linear_model`包中的的`LinearRegression`，正则化回归则可以使用同一个包中的`Ridge`***     
          
 &ensp;     
 &ensp;        
