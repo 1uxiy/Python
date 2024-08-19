@@ -109,10 +109,17 @@
      * TN:真实为F，预测也为F       
      * FN:真实为T，预测为F          
      * TP:真实为T，预测也为T      
-     * FP:真实为F，预测为T        &emsp; &emsp; 由这四个部分组成的矩阵即混淆矩阵。
+     * FP:真实为F，预测为T        &emsp; &emsp; ————由这四个部分组成的矩阵即混淆矩阵。           
+```python
+t = 0
+predict_churn = (y_pre >= t)
+predict_no_churn = (y_pre < t)
+actual_churn = (y_val == 1)
+actual_no_churn = (y_val == 0)
 
-
-
-
+TP = (predict_chrun & actual_churn).sum()
+FP = (predict_chrun & actual_no_churn).sum()
+TN = (predict_no_chrun & actual_no_churn).sum()
+FN = (predict_no_chrun & actual_churn).sum()```
 
 
