@@ -109,17 +109,18 @@
      * TN:真实为F，预测也为F       
      * FN:真实为T，预测为F          
      * TP:真实为T，预测也为T      
-     * FP:真实为F，预测为T        &emsp; &emsp; ————由这四个部分组成的矩阵即混淆矩阵。           
+     * FP:真实为F，预测为T        &emsp; &emsp; ————由这四个部分组成的矩阵即混淆矩阵。
+   &emsp; $准确度 = \frac{TN+TP}{TN+FN+TP+FP}$           
 ```python
-t = 0
+t = 0.5
 predict_churn = (y_pre >= t)
 predict_no_churn = (y_pre < t)
 actual_churn = (y_val == 1)
 actual_no_churn = (y_val == 0)
 
-TP = (predict_chrun & actual_churn).sum()
-FP = (predict_chrun & actual_no_churn).sum()
+TP = (predict_chrun & actual_churn).sum()             #布尔数组上调用sum（）返回的是TRUE的数量      
+FP = (predict_chrun & actual_no_churn).sum()          #sum先将布尔数组转化为0、1，再求和  
 TN = (predict_no_chrun & actual_no_churn).sum()
-FN = (predict_no_chrun & actual_churn).sum()```
+FN = (predict_no_chrun & actual_churn).sum()```                
 
 
