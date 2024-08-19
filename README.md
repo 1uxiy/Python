@@ -109,8 +109,8 @@
      * TN:真实为F，预测也为F       
      * FN:真实为T，预测为F          
      * TP:真实为T，预测也为T      
-     * FP:真实为F，预测为T        &emsp; &emsp; ————由这四个部分组成的矩阵即混淆矩阵。
-   &emsp; $准确度 = \frac{TN+TP}{TN+FN+TP+FP}$               
+     * FP:真实为F，预测为T        &emsp; &emsp; ——由这四个部分组成的矩阵即混淆矩阵。       
+   &emsp; $准确度 = \frac{TN+TP}{TN+FN+TP+FP}$                 
    &emsp; $查准率 = \frac{TP}{TP+FP}$  ——预测为TRUE的客户中真正为TURE的比例            
    &emsp; $查全率 = \frac{TP}{TP+FN}$  ——实际为TRUE的客户中预测为TRUE的比例    
 ```python
@@ -125,5 +125,32 @@ FP = (predict_chrun & actual_no_churn).sum()          #sum先将布尔数组转�
 TN = (predict_no_chrun & actual_no_churn).sum()
 FN = (predict_no_chrun & actual_churn).sum()
 ```                
+10. **ROC曲线和AUC分数**       
+      * *随机基线模型*:数组中所有数值均为0~1之间的随即分数      
+      * *理想模型*:理想模型以预测概率对数据集中的所有样本进行排序（其对流失客户的打分更高，所以预测概率更高）排序类似000000111           
+   &emsp; &emsp; &emsp; 理想模型的预测是从0递增到1               
+      * *FPR* :假正例率——实际为假的目标中预测为真的概率  &emsp; $FPR = /frac{FP}{FP+TN}$      
+      * *TPR* :真正例率——实际为真的目标中预测为真的概率  &emsp; $TPR = /frac{TP}{TP+FN}$                
+    &emsp; `ROC曲线`是以`FPR`为x轴、`TPD`为y轴绘制的曲线，通常将随机模型、理想模型和训练模型的曲线一起绘制、比对，越靠近理想模型，说明训练模型质量越高        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
