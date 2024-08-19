@@ -111,8 +111,8 @@
      * TP:真实为T，预测也为T      
      * FP:真实为F，预测为T        &emsp; &emsp; ————由这四个部分组成的矩阵即混淆矩阵。
    &emsp; $准确度 = \frac{TN+TP}{TN+FN+TP+FP}$               
-   &emsp; $查准率 = \frac{TP}{TP+FP}$  ————预测为TRUE的客户中真正为TURE的比例            
-   &emsp; $查全率 = \frac{TP}{TP+FN}$  ————真正为TRUE的客户中预测为TRUE的比例    
+   &emsp; $查准率 = \frac{TP}{TP+FP}$  ——预测为TRUE的客户中真正为TURE的比例            
+   &emsp; $查全率 = \frac{TP}{TP+FN}$  ——实际为TRUE的客户中预测为TRUE的比例    
 ```python
 t = 0.5
 predict_churn = (y_pre >= t)
