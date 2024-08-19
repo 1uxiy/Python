@@ -121,6 +121,7 @@ actual_no_churn = (y_val == 0)
 TP = (predict_chrun & actual_churn).sum()             #布尔数组上调用sum（）返回的是TRUE的数量      
 FP = (predict_chrun & actual_no_churn).sum()          #sum先将布尔数组转化为0、1，再求和  
 TN = (predict_no_chrun & actual_no_churn).sum()
-FN = (predict_no_chrun & actual_churn).sum()```                
+FN = (predict_no_chrun & actual_churn).sum()
+```                
 
 
