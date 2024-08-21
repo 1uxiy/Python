@@ -39,7 +39,7 @@
                features_1.append(feature)
                df[feature] = (df[name]==value).astype(int)
    ```  
-3. **数据的正则化**：   
+2. **数据的正则化**：   
    &emsp; 正则化是为了防止过度拟合，即模型在训练数据上表现良好，但在新的数据上表现很差，因为模型学习到了数据的噪声  
    &emsp; · 一种正则化的方式是在数据矩阵的每个对角元素上添加一个小数值  
    &emsp; 这种情况下标准方程可以修正为:   
@@ -132,7 +132,7 @@ FN = (predict_no_chrun & actual_churn).sum()
       * *FPR* :假正例率——实际为假的目标中预测为真的概率  &emsp; $FPR = \frac{FP}{FP+TN}$      
       * *TPR* :真正例率——实际为真的目标中预测为真的概率  &emsp; $TPR = \frac{TP}{TP+FN}$                
     &emsp; `ROC曲线`是以`FPR`为x轴、`TPD`为y轴绘制的曲线，通常将随机模型、理想模型和训练模型的曲线一起绘制、比对，越靠近理想模型，说明训练模型质量越高        
-
+<img src="https://github.com/1uxiy/Python/blob/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/IMAGE/output.png">     
 
 
 
