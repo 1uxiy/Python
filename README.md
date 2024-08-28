@@ -101,7 +101,7 @@
      * 独热编码的权重为正，则说明相应的特征指向目标变量为1，并且绝对值越大说明该特征的影响更大           
 &emsp;      
 8. **评估指标**:            
-     * *准确度* ： 即正确预测案例(硬预测)的数量 &esnp; / &ensp; 数据集案例的总数，可以直接调用`sklearn.metrics`包中的`accurancy_score(y1,y2)`来计算                     
+     * *准确度* ： 即正确预测案例(硬预测)的数量  &ensp;  &ensp; 数据集案例的总数，可以直接调用`sklearn.metrics`包中的`accurancy_score(y1,y2)`来计算                     
      * *虚拟基线*：实际应用中，仅通过准确度很难确定模型的质量。例如在一个总数为一千的数据集中，有七百个未流失、三百个流失，那么预测值如果全部为未流失，准确率都有70%。所以我们建立一个全部为`false`或者全部为`true`的数组来作为基线，从而为预测数值准确度的计算提供一个校准           
 &emsp; 
 9. **混淆矩阵**:
@@ -125,17 +125,19 @@ FP = (predict_chrun & actual_no_churn).sum()          #sum先将布尔数组转�
 TN = (predict_no_chrun & actual_no_churn).sum()
 FN = (predict_no_chrun & actual_churn).sum()
 ```                
-10. **ROC曲线和AUC分数**       
+10. **ROC曲线**       
       * *随机基线模型*:数组中所有数值均为0~1之间的随即分数      
       * *理想模型*:理想模型以预测概率对数据集中的所有样本进行排序（其对流失客户的打分更高，所以预测概率更高）排序类似000000111           
    &emsp; &emsp; &emsp; 理想模型的预测是从0递增到1               
       * *FPR* :假正例率——实际为假的目标中预测为真的概率  &emsp; $FPR = \frac{FP}{FP+TN}$      
       * *TPR* :真正例率——实际为真的目标中预测为真的概率  &emsp; $TPR = \frac{TP}{TP+FN}$                
-    &emsp; `ROC曲线`是以`FPR`为x轴、`TPD`为y轴绘制的曲线，通常将随机模型、理想模型和训练模型的曲线一起绘制、比对，越靠近理想模型，说明训练模型质量越高        
-<img src="https://github.com/1uxiy/Python/blob/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/IMAGE/output.png">     
+    &emsp; `ROC曲线`是以`FPR`为x轴、`TPD`为y轴绘制的曲线，通常将随机模型、理想模型和训练模型的曲线一起绘制、比对，越靠近理想模型，说明训练模型质量越高         
+    &emsp; 可以使用`sklearn.metrics`中的`roc_curve`直接计算`fpr` 、`tpr`:`fpr,tpr,thresholds = roc_curve(y_val,y_pred)`          
+<img src="https://github.com/1uxiy/Python/blob/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/IMAGE/output.png">
 
-
-
+11. **AUC分数**           
+      *  `AUC`即`ROC曲线`与坐标轴围成的面积，取理想模型的AUC为1，则AUC越接近1，模型拟合的越好——0.9表示相当好，0.8还可以，0.7不太行       
+      *   sada
 
 
 
