@@ -137,8 +137,8 @@ FN = (predict_no_chrun & actual_churn).sum()
 
 11. **AUC分数**           
       *  `AUC`即`ROC曲线`与坐标轴围成的面积，取理想模型的AUC为1，则AUC越接近1，模型拟合的越好——0.9表示相当好，0.8还可以，0.7不太行       
-      *   sada
-
+      *   可以使用`sklearn.metrics`中的`auc`来计算：`auc(fpr,tpr)`;也可以使用`sklearn.metrics`中的`roc_auc_score`来计算：`roc_auc_score(y_val,y_pred)`(则不需要先计算roc,但两种方法计算得到的auc可能不同)                        
+      
 
 
 
