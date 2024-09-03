@@ -134,13 +134,14 @@ FN = (predict_no_chrun & actual_churn).sum()
     &emsp; `ROC曲线`是以`FPR`为x轴、`TPD`为y轴绘制的曲线，通常将随机模型、理想模型和训练模型的曲线一起绘制、比对，越靠近理想模型，说明训练模型质量越高         
     &emsp; 可以使用`sklearn.metrics`中的`roc_curve`直接计算`fpr` 、`tpr`:`fpr,tpr,thresholds = roc_curve(y_val,y_pred)`          
 <img src="https://github.com/1uxiy/Python/blob/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/IMAGE/output.png">
-
+&emsp; 
 11. **AUC分数**           
       *  `AUC`即`ROC曲线`与坐标轴围成的面积，取理想模型的AUC为1，则AUC越接近1，模型拟合的越好——0.9表示相当好，0.8还可以，0.7不太行       
-      *   可以使用`sklearn.metrics`中的`auc`来计算：`auc(fpr,tpr)`;也可以使用`sklearn.metrics`中的`roc_auc_score`来计算：`roc_auc_score(y_val,y_pred)`(则不需要先计算roc,但两种方法计算得到的auc可能不同)                        
-      
-
-
+      *   可以使用`sklearn.metrics`中的`auc`来计算：`auc(fpr,tpr)`;也可以使用`sklearn.metrics`中的`roc_auc_score`来计算：`roc_auc_score(y_val,y_pred)`(则不需要先计算roc,但两种方法计算得到的auc可能不同)                            
+&emsp;       
+12. **F1分数**         
+&emsp;  `F1分数`是用来处理查准率-查全率权衡的一种方法. $F1 = 2*P*R/(P+R)$         
+&emsp;  `F1分数`取最大时，即最佳阈值   
 
 
 
