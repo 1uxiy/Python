@@ -141,7 +141,7 @@ FN = (predict_no_chrun & actual_churn).sum()
       *   可以使用`sklearn.metrics`中的`auc`来计算：`auc(fpr,tpr)`;也可以使用`sklearn.metrics`中的`roc_auc_score`来计算：`roc_auc_score(y_val,y_pred)`(则不需要先计算roc,但两种方法计算得到的auc可能不同)                            
 &emsp;       
 12. **F1分数**         
-&emsp;  `F1分数`是用来处理查准率-查全率权衡的一种方法. $F1 = 2*P*R/(P+R)$         
+&emsp;  `F1分数`是用来处理查准率-查全率权衡的一种方法.   $F1 = 2*P*R/(P+R)$         
 &emsp;  `F1分数`取最大时，即最佳阈值   
 
 
