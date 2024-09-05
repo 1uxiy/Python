@@ -144,8 +144,8 @@ FN = (predict_no_chrun & actual_churn).sum()
 &emsp;  `F1分数`是用来处理查准率-查全率权衡的一种方法. &emsp; $` F1= 2*P*R/(P+R) `$         
 &emsp;  `F1分数`取最大时，即最佳阈值   
 13. **PR曲线**     
-&emsp;  `PR曲线`是以`查准率(precision)`和`查全率(recall)`分别为x轴、y轴绘制的曲线               
-&esmp;  `查准率(precision)`和`查全率(recall)`可以用`sklearn.metrics`中的`precision_recall_score`来计算       
+&emsp;  `PR曲线`是以`查准率(precision)`和`查全率(recall)`分别为x轴、y轴绘制的曲线
+&emsp;  `查准率(precision)`和`查全率(recall)`可以用`sklearn.metrics`中的`precision_recall_score`来计算       
 <img src="https://github.com/1uxiy/Python/blob/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/IMAGE/output_PR.png">
 
 
